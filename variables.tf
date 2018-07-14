@@ -22,10 +22,15 @@ variable "maintenance_window" {
 }
 
 # tags
-variable "tag_name" {}
+variable "tags" {
+  description = "A mapping of tags to assign to all resources"
+  default     = {}
+}
 
-variable "tag_environment" {}
-variable "tag_team" {}
-variable "tag_application" {}
-variable "tag_contact-email" {}
-variable "tag_customer" {}
+variable "name" {
+  description = "Name for the Redis instance"
+}
+
+variable "port" {
+  default = "6379"
+}
