@@ -34,3 +34,10 @@ variable "name" {
 variable "port" {
   default = "6379"
 }
+
+variable "security_group_ids" {
+
+}
+variable "subnet_group_name" {
+  
+}
